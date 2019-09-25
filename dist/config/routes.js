@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const index_Rt_1 = require("../routes/index.Rt");
+exports.router = express_1.default.Router();
+exports.router.use('/categoria', index_Rt_1.categoriaRouter);
+exports.router.use('/cliente', index_Rt_1.clienteRouter);
+exports.router.use('/comanda', index_Rt_1.comandaRouter);
+exports.router.use('/compra', index_Rt_1.compraRouter);
+exports.router.use('/empleado', index_Rt_1.empleadoRouter);
+exports.router.use('/factura', index_Rt_1.facturaRouter);
+exports.router.use('/imagen', index_Rt_1.imagenesRouter);
+exports.router.use('/login', index_Rt_1.loginRouter);
+exports.router.use('/producto', index_Rt_1.productoRouter);
+exports.router.use('/proveedor', index_Rt_1.proveedorRouter);
+exports.router.use('/role', index_Rt_1.roleRouter);
+exports.router.use('/sucursal', index_Rt_1.sucursalRouter);
+exports.router.use('/upload', index_Rt_1.uploadRouter);
+exports.router.use('/venta', index_Rt_1.ventaRouter);
