@@ -27,13 +27,13 @@ mongoose_1.default
 })
     .catch(err => console.log(err));
 // Si no se conecta correctamente escupimos el error
+server.app.use(cors_1.default());
+server.app.use(body_parser_1.default.json());
 server.app.use(body_parser_1.default.urlencoded({
     extended: false
 }));
-server.app.use(body_parser_1.default.json());
-server.app.use(cors_1.default({ origin: true, credentials: true }));
 server.app.use(express_pdf_1.default);
 server.app.use('/api', routes_1.router);
 server.start(() => {
-    console.log(`Servidor correindo en el puerto ${server.port}`);
+    console.log(`Servidor corriendo en el puerto ${server.port}`);
 });
