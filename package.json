@@ -34,7 +34,7 @@
     "mongoose-unique-validator": "^2.0.1",
     "phantomjs-prebuilt": "^2.1.16",
     "socket.io": "^2.2.0",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
